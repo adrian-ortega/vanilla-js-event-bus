@@ -13,6 +13,6 @@ bus.on('fire-alert', (message) => {
 
 document.querySelector('button').addEventListener('click', (event) => {
     event.preventDefault();
-    bus.emit('fire-alert');
+    bus.emit('fire-alert', 'hello world');
 })
 ```
